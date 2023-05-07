@@ -32,6 +32,8 @@ public:
 			size = other.size;
 			arr = other.arr;
 			other.arr = nullptr;
+			other.capacity = 0;
+			other.size = 0;
 		}
 		return *this;
 	}
@@ -55,13 +57,16 @@ public:
 	}
 	~smart_array()
 	{
-		delete[] arr;
+		if (arr != nullptr)
+		{
+			delete[] arr;
+		}		
 	};
 	void add_element(int _value)
 	{
 		if (size + 1 <= capacity)
 		{
-			arr[++size - 1] = _value;
+			arr[size++] = _value;
 		}
 		else
 		{

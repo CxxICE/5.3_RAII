@@ -26,13 +26,16 @@ public:
 	};
 	~smart_array()
 	{
-		delete[] arr;
+		if (arr != nullptr)
+		{
+			delete[] arr;
+		}		
 	};
 	void add_element(int _value)
 	{
 		if (size + 1 <= capacity)
 		{
-			arr[++size - 1] = _value;
+			arr[size++] = _value;
 		}
 		else
 		{
