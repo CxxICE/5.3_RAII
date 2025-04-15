@@ -21,11 +21,11 @@
 
 ### Задание 1
 
-[Умный массив](https://github.com/netology-code/cppl-homeworks/tree/main/03/01).
+[Умный массив](01).
 
 ### Задание 2
 
-[Копирование умных массивов](https://github.com/netology-code/cppl-homeworks/tree/main/03/02).
+[Копирование умных массивов](02).
 
 ------
 
